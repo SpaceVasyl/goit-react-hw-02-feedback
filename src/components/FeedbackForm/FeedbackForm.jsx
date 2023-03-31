@@ -18,16 +18,17 @@ newFunc = (ewent)=>{
 //   this.setState(prevState=>{ console.log(prevState.neutral); return {neutral: prevState.neutral + 1}});
 // }
 
+countTotalFeedback = ()=>{
+  const summOFState = this.state.bad + this.state.neutral + this.state.good;
+  return  summOFState;
+}
   render() {
     return (<div>
       <h2>Please leave feedback</h2>
         <button type="button" className={css.buttonstat} onClick={this.newFunc}>Good</button>
         <button type="button" className={css.buttonstat} onClick={this.newFunc}>Neutral</button>
         <button type="button" className={css.buttonstat} onClick={this.newFunc}>Bad</button>
-        <p>{this.state.good} Good</p>
-        <p>{this.state.neutral} Neutral</p>
-        <p>{this.state.bad} Bad</p>
-    </div>)
+      </div>)
   }
 }
 
