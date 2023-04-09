@@ -1,5 +1,4 @@
 
-// import css from './Statistics.module.css';
 export const Statistics = ({good, neutral, bad, totalFunc, positive}) => {
         // return <>
         // <h2>Statistics</h2>
